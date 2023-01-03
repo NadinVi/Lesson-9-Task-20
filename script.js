@@ -37,10 +37,12 @@ arrNumber.forEach(function(number) {
 console.log(`Мінімальний елемент масиву ${minNum}. Його порядковий номер ${arrNumber.indexOf(minNum)}`);
 
 let maxArr =
-arrNumber.map(function (value, index){
+arrNumber.map(function (value){
         return value === maxNum ? maxNum : 0;
     })
 console.log(maxArr);
+
+
 
 let pozitiveNums = arrNumber
 .filter(function(number) {
